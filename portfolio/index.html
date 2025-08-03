@@ -1,94 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prem Patel | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Coursework</title>
+  <style>
+    body { font-family: 'Times New Roman', Times, serif; padding: 0; margin: 0; background-color: white;}
+    a {margin: 10px; font-size: 20px; text-decoration: none; color: #0a00cc; }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white; /* center content stays white */
+      padding: 20px;
+      min-height: 100vh; /* make sure it stretches full height */
+    }
+    p {
+      line-height: 1;
+    }
+    .header {
+      background-color: #ec7d22; /* blue header */
+      height: 30px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 5px;
+      background-color: #ec7d22;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      cursor:pointer;
+      background-color: #f9cf66;
+      border: 2px solid #ecdcaf;
+      margin: 5px 1px 5px 5px;
+      padding: 1.5px 0px 1.5px 2px;
+      font-size: 14px;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9cf66;
+      min-width: 160px;
+      height: 1.6em;
+      font-size: 0.9em;
+      padding: 4px 9.09px 0 9.09px;
+      border-style: solid;
+      border-color: #fdebc5;
+      border-width: .91px .91px 0 .91px;
+      margin: 0 2px 0 0;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      text-decoration: none;
+      color: black;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .landing-intro {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+  </style>
+
+  <link rel="icon" type="image/gif" href="../images/white_pin.gif">
 </head>
 <body>
-  <header>
-    <h1>Prem Patel</h1>
-    <p>Civil Engineering Student | University of Sydney</p>
-    <nav>
-      <a href="https://realprempatel.github.io">🏠 Home</a>
-      <a href="#programming">💻 Programming</a>
-      <a href="#software">🧰 Software</a>
-      <a href="#research">📚 Research</a>
-    </nav>
-  </header>
+  <div>
+    <header class="header">
+      <img src="..\images\rss.gif" alt="RSS" style="margin-left: auto; height: 15px; margin-top: 7.5px;">
+      <a href="https://www.linkedin.com/in/prem-v-patel" target="_blank" style="margin-right: 10px; margin-top: 0;">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" height="30">
+      </a>
+    </header>
+  </div>
 
-  <main>
-    <!-- Programming Section -->
-    <section id="programming">
-      <h2>💻 Programming</h2>
+  <!-- Main Content -->
+  <div class="content">
+    <h1 style="text-align: center">MY PORTFOLIO</h1>
 
-      <div class="subsection">
-        <h3>Python</h3>
-        <p>Used in flood prediction models, data cleaning (Pandas), ML (scikit-learn), and plotting (Matplotlib, Seaborn).</p>
-      </div>
+    <div class="landing-intro">
+      <p>This is my portfolio page. I've uploaded some of the projects I've worked on and some of my research work.</p>
+      <p>If you're not an employer, feel free to browse around, and maybe one of my projects will inspire you to try something of your own!</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="../" style="text-align: center;"><img src="../images\home_grey.gif" alt="Back to home"></a>
+    </div>
+  </div>
 
-      <div class="subsection">
-        <h3>SQL</h3>
-        <p>Experience querying large datasets, writing joins, and designing ER models for university assignments.</p>
-      </div>
-
-      <div class="subsection">
-        <h3>MATLAB</h3>
-        <p>Applied in numerical methods, control systems, and thermal analysis coursework.</p>
-      </div>
-
-      <div class="subsection">
-        <h3>R</h3>
-        <p>Used for statistical modelling and data visualization in environmental engineering analysis.</p>
-      </div>
-
-      <div class="subsection">
-        <h3>Rhino / Grasshopper</h3>
-        <p>3D modelling and generative design for architectural and infrastructure formwork studies.</p>
-      </div>
-    </section>
-
-    <!-- Software Section -->
-    <section id="software">
-      <h2>🧰 Software</h2>
-      <p>Proficient in:</p>
-      <ul>
-        <li>AutoCAD (2D Drafting, Site Layouts)</li>
-        <li>Revit (BIM workflows)</li>
-        <li>QGIS (Geospatial analysis and terrain mapping)</li>
-        <li>ANSYS (basic FEA simulations)</li>
-        <li>Microsoft Excel (VBA, macros, data dashboards)</li>
-      </ul>
-    </section>
-
-    <!-- Research & Publications Section -->
-    <section id="research">
-      <h2>📚 Research & Publications</h2>
-      <ul>
-        <li>
-          <strong>Flood Risk Mapping Using Machine Learning</strong> – 
-          ENGG1810 Grand Challenge Project, USYD (2025)<br />
-          <em>Presented use of rainfall, streamflow, and temperature data to predict flood risk using regression models.</em>
-        </li>
-        <li>
-          <strong>Shoring Design in Heritage Zones</strong> – 
-          Decode Hackathon Entry (2025)<br />
-          <em>Engineered excavation systems for a level-4 basement near fragile facades at Potts Point.</em>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>📬 Contact</h2>
-      <p>Email: <a href="mailto:realprempatel@gmail.com">realprempatel@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/realprempatel" target="_blank">realprempatel</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Prem Patel. All rights reserved.</p>
+  <!-- Footer -->
+  <footer style="background-color: rgb(189, 189, 189); padding: 10px; font-size: 15px; border-top: 5px solid #ec7d22; display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <img src="../images/nocookie.gif" alt="No Cookie" style="margin-right: 15px;">
+    <div style="text-align: center; line-height: 1.5;">
+      <p style="margin: 0;">&copy; 2025 Prem Patel</p>
+      <p style="margin: 0">
+        Email me:
+        <a href="mailto:realprempatel@gmail.com" target="_blank" style="font-size: 15px; text-decoration: none;">
+          realprempatel@gmail.com
+        </a>
+      </p>
+      <p id="last-updated" style="margin: 0"></p>
+    </div>
   </footer>
+
+  <!-- Script: auto-update footer date -->
+  <script>
+    const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+    const lastUpdated = new Date(document.lastModified).toLocaleDateString('en-AU', options);
+    document.getElementById('last-updated').textContent = `Last update: ${lastUpdated}`;
+  </script>
 </body>
 </html>
