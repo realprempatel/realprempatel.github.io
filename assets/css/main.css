@@ -123,17 +123,34 @@ body {
 }
 
 /* ===== FOOTER ===== */
+/* ===== FOOTER ===== */
 .site-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 60px;
+  width: 100%;
+  background: #f4f4f4;        /* light grey */
+  border-top: 1px solid #e0e0e0;
+  margin-top: 80px;
 }
 
 .footer-inner {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 20px;
+  max-width: 720px;           /* SAME width as content column */
+  margin: 0 auto;
+  padding: 20px 20px 28px;
+}
+
+.footer-text {
+  text-align: right;          /* right aligned within content area */
   font-size: 0.85rem;
-  color: var(--muted);
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer-text a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
 }
 
 /* ===== RESPONSIVE ===== */
